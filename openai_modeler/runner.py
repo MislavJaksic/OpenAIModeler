@@ -18,7 +18,7 @@ from loguru import logger
 
 from openai_modeler.package_one import module_one
 from openai_modeler.package_one.module_one import raise_exception
-from secrets import openai_api_key
+from openai_modeler.secrets import openai_api_key
 
 log_message = "who={username}, what={object}/{status}"
 
@@ -27,10 +27,13 @@ def main() -> int:
     """main() will be run if you run this script directly"""
 
     openai.api_key = openai_api_key
+
+
+
     model = 'gpt-3.5-turbo'
     messages = [
-        {"role": "system", "content": "You are a hiring manager."},
-        {"role": "user", "content": "What does a great CV look like?"},
+        {"role": "system", "content": "You are a AWS engineer."},
+        {"role": "user", "content": "Write a Lambda function that is triggered by an upload to the S3 bucket ..."},
         #{"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
         #{"role": "user", "content": "Where was it played?"}
     ]

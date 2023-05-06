@@ -3,7 +3,7 @@
 '''
 * Give an instruction
 * Give few examples
-* * Give lots of examples by fine-tuning the model
+    * Give lots of examples by fine-tuning the model
 * Adjust temperature
 
 https://platform.openai.com/examples
@@ -25,9 +25,9 @@ https://github.com/openai/openai-cookbook/
 $: poetry install  # install all dependencies
 ```
 
-'''
+```
 Rename secrets-template.py to secrets.py and paste your OpenAI API key into it.
-'''
+```
 
 ### dist
 
